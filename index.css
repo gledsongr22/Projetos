@@ -1,0 +1,262 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container--center{
+    align-items: center;
+}
+/*Header*/
+.header{
+    position: relative;
+    margin-top: 5px;
+}
+
+.header__sacola{
+    display: inline-block;
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    width: 140px;
+    text-align: right;
+    padding-right: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__nav{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.nav__link-list li{
+    display: inline-block;
+
+}
+
+.nav__link-list a{
+    color: #333;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+/* Main*/
+
+.section{
+margin-bottom: 5px;
+margin-top: 5px;
+}
+
+.busca{
+    width: 230px;
+    padding: 8px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    border-radius: 5px 5px 0 0;
+}
+
+.busca__campo{
+    border-radius: 3px;
+    border: none;
+    padding: 2px 5px;
+    width: 88%;
+    margin-right: 5px;
+}
+
+.busca__botao{
+    background-image: url(../img/busca.png);
+    width: 16px;
+    height: 16px;
+    background-color: unset;
+    border: none;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.departamentos{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    margin: 0;
+    width: 230px;
+    box-sizing: border-box;
+}
+
+.departamentos__titulo{
+     font-weight: bold;
+     margin-bottom: 10px;
+     padding: 8px 8px 0;
+}
+
+.nav__produtos a{
+    text-decoration: none;
+    color: #333;
+}
+
+.nav__produtos li{
+    margin: 5px 0;
+    padding: 5px 8px;
+    transition: background-color 0.7s;
+}   
+
+.nav__produtos li:hover{
+    background-color:#fff;
+    border-top: 1px solid rgba(56, 156, 255, 0.616);
+    border-bottom: 1px solid rgba(56, 156, 255, 0.616);
+    transition: background-color 0.7s;
+}
+
+.produtos__camisas{
+    display: none;
+}
+
+.nav__produtos li:hover .produtos__camisas{
+    display: block;
+}
+
+.painel{
+    width: 48%;
+    padding: 8px 8px 14px;
+    box-sizing: border-box; 
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 3px; 
+}
+
+.painel--novidades{
+    background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+}
+
+.painel--mais-vendidos{
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);  
+}
+
+.painel__titulo{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.painel__titulo::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;  
+} 
+
+.painel__produtos{
+    flex-wrap: wrap;
+}
+
+.painel__produtos figure{
+    width: 140px;
+    text-align: center;
+    margin-top: 8px;
+    line-height: 1.5;
+
+}
+
+.painel__produtos img{
+    width: 100%;
+    transition: .40s;
+}
+
+.painel__produtos img:hover{
+    transform: scale(1.1) translate(0, 10px);
+    transition: .40s;
+}
+
+.footer{
+    background-image: url(../img/fundo-rodape.png);
+    margin-top: 8px;
+    padding: 10px 0;
+}
+
+.footer__redes-sociais a{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;   
+}
+
+.footer__redes-sociais a[href*="facebook.com"]{
+    background-image: url(../img/facebook.png);
+}
+
+.footer__redes-sociais a[href*="twitter.com"]{
+    background-image: url(../img/twitter.png);
+}
+
+.footer__redes-sociais a[href*="orkut.com"]{
+    background-image: url(../img/googleplus.png);
+}
+
+@media(max-width:939px){
+    .container{
+        width: 100%;    
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__sacola{
+        display: none;
+    }
+
+    .header__nav{
+        position: static;
+    }
+
+    .nav__link-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav__link-list li{
+        margin-top: 5px;
+    }
+
+    /*Main*/
+
+    .section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .busca, .departamentos{
+        width: inherit;
+    }
+
+    .section__banner{
+        width: 100%;
+    }
+
+    .painel{
+        width: 90%;
+    }
+
+    .menu-lateral{
+        width: 100%;
+    }
+    
+}

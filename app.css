@@ -1,0 +1,215 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header__titulo{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+.principal{
+    background-color: #efefef;
+    padding: 5.5rem 2rem;
+}
+
+.cards{
+    justify-content: space-between;
+}
+
+.cards__card{
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+    width: 8.5rem;
+    height: 9rem;
+    box-sizing: border-box;
+    padding-top: 6rem;    
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: .8rem;
+    background-repeat: no-repeat;
+    background-size: 3.5rem;
+    background-position: top 1.5rem center;
+}
+
+.cards__card h2{
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+.cards__card p{
+    color: #c0c0c0;
+}
+
+.icon--beer{
+    background-image: url(../app/img/beer.svg);
+   
+}
+
+.icon--dish{
+    background-image: url(../app/img/dish.svg);
+   
+}
+
+.icon--cafe{
+    background-image: url(../app/img/cafe.svg);
+   
+}
+
+.icon--map{
+    background-image: url(../app/img/route.svg);
+    
+}
+
+.icon--fast-foods{
+    background-image: url(../app/img/burger.svg);
+    
+}
+
+.icon--foods{
+    background-image: url(../app/img/breakfast.svg);
+}
+
+.footer__abas{
+    padding: 0 2rem;
+    justify-content: space-between;
+    font-size: .6rem;
+    color: #aaa;
+    text-align: center;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.footer__abas a{
+    display: inline-block;
+    width: 3rem;
+    height: 3.7rem;
+    box-sizing: border-box;
+    padding-top: 2.4rem;
+    background-repeat: no-repeat;
+    background-size: 1.7rem;
+    background-position: top .5rem center;
+}
+
+.icon--home{
+    background-image: url(../app/img/home.svg);
+}
+
+.icon--pin{
+    background-image: url(../app/img/placeholder.svg);
+}
+
+.icon--book{
+    background-image: url(../app/img/bookmark.svg);
+}
+
+.icon--cup{
+    background-image: url(../app/img/trophy.svg);
+}
+
+.icon--profile{
+    background-image: url(../app/img/user.svg);
+}
+
+@media(min-width:608px){
+
+    .principal{
+        padding: 5.5rem 2rem 7.5rem;
+    }
+
+    .header__titulo{
+        font-size: 2.3rem;
+    }
+    
+    .cards__card{
+        width: 10.5rem;
+        height: 11rem;
+        padding-top: 7rem;
+        font-size: 1rem;
+        background-size: 4.5rem;
+    }
+
+    .footer__abas{
+        font-size: 1rem;
+    }
+
+    .footer__abas a{
+        width: 5rem;
+        height: 5.7rem;
+        padding-top: 3.4rem;
+        background-size: 2.4rem;
+    }
+}
+
+@media(min-width:735px){
+
+    .header__titulo{
+        font-size: 2.7rem;
+    }
+    
+    .cards__card{
+        width: 11.5rem;
+        height: 12rem;
+        padding-top: 8rem;
+        font-size: 1.2rem;
+        background-size: 5.5rem;
+    }
+
+    .footer__abas{
+        font-size: 1.2rem;
+    }
+
+    .footer__abas a{
+        width: 6rem;
+        height: 6rem;
+        padding-top: 4rem;
+        background-size: 2.8rem;
+    }
+}
+
+@media(min-width:1024px){
+
+    .cards__card{
+        margin-top: 2.5rem;
+        transition: .25s;
+    }
+
+    .cards__card:hover{
+        transform: translate(0, 5px);
+        transition: .25s;
+    }
+        
+    
+}
+
+@media(min-width:1440px){
+   
+    .cards__card{
+        width: 14rem;
+        height: 16rem;
+        padding-top: 10rem;
+        background-size: 6.5rem;
+    }
+
+}
