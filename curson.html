@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Cursos<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Matrículas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Emails</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mb-3">
+        <div class="jumbotron bg-dark text-light mt-3">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">Escolha os cursos que gostaria de se matricular.</p>
+        </div>
+        <table class="table tabela-cursos rounded-top">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="40" name="curso"></td>
+                    <td>Violão</td>
+                    <td>40 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="32" name="curso"></td>
+                    <td>Baixo</td>
+                    <td>32 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="20" name="curso"></td>
+                    <td>Bateria</td>
+                    <td>20 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="48" name="curso"></td>
+                    <td>Canto</td>
+                    <td>48 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="24" name="curso"></td>
+                    <td>Saxsofone</td>
+                    <td>24 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="60" name="curso"></td>
+                    <td>Violino</td>
+                    <td>60 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="30" name="curso"></td>
+                    <td>Teclado</td>
+                    <td>30 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="48" name="curso"></td>
+                    <td>Saxsofone Avançado</td>
+                    <td>48 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="80" name="curso"></td>
+                    <td>Violino Avançado</td>
+                    <td>80 horas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" onclick="evento(this)" value="50" name="curso"></td>
+                    <td>Teclado Avançado</td>
+                    <td>50 horas</td>
+                </tr>
+            </tbody>
+            <tfoot class="bg-dark text-light">
+                <tr>
+                    <td>Total</td>
+                    <td class="js-cursos">0 Cursos</td>
+                    <td class="js-totaisDeHoras">0 Horas</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button class="btn btn-outline-dark n-lg js-confirmar">Confirmar Matrícula</button>
+    </main>
+    <script src="css/js/cursos.js"></script>
+    <script src="css/js/jquery.js"></script>
+    <script src="css/js/bootstrap.js"></script>
+</body>
+
+</html>
